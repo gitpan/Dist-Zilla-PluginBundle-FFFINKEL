@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::PluginBundle::FFFINKEL::AUTHORITY = 'cpan:FFFINKEL';
 }
 {
-  $Dist::Zilla::PluginBundle::FFFINKEL::VERSION = '0.001';
+  $Dist::Zilla::PluginBundle::FFFINKEL::VERSION = '0.006';
 }
 
 # ABSTRACT: My Dist::Zilla plugin bundle
@@ -75,7 +75,7 @@ Dist::Zilla::PluginBundle::FFFINKEL - My Dist::Zilla plugin bundle
 
 =head1 VERSION
 
-version 0.001
+version 0.006
 
 =head1 SYNOPSIS
 

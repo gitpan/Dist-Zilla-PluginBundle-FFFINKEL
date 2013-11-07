@@ -79,9 +79,9 @@ sub configure {
 		qw/
 		  EOLTests
 		  PodSyntaxTests
-		  PodCoverageTests
 		  Git::Check
 		  /
+		  #PodCoverageTests
 	);
 
 	$self->add_bundle(
@@ -94,41 +94,6 @@ sub configure {
 
 	$self->add_plugins('Twitter');
 
-	#=pod
-	#
-	#TODO
-	#
-	#  [MetaJSON]
-	#  [MetaConfig]
-	#  [MetaResources]
-	#  repository.type   = git
-	#  repository.url    =
-	#  http://git.mfinkel.net/cpan/${lowercase_dist}
-	#  repository.web    =
-	#  http://github.com/rafl/${lowercase_dist}
-	#  bugtracker.web    =
-	#  http://rt.cpan.org/Public/Dist/Display.html?Name=${dist}
-	#  bugtracker.mailto = bug-${dist}@rt.cpan.org
-	#  homepage          =
-	#  http://metacpan.org/release/${dist}
-	#
-	#=cut
-	#
-	#	$self->add_plugins('MetaJSON');
-	#	$self->add_plugins('MetaConfig');
-	#	$self->add_plugins('MetaResources', {
-	#		'repository.type' => 'git',
-	#		'repository.url' =>
-	#		'git@github.com:fffinkel/${lowercase_dist}',
-	#		'repository.web' =>
-	#		'http://github.com/fffinkel/${lowercase_dist}',
-	#		'bugtracker.web' =>
-	#		'http://rt.cpan.org/Public/Dist/Display.html?Name=${dist}',
-	#		'bugtracker.mailto' => 'bug-${dist}@rt.cpan.org',
-	#		'homepage' =>
-	#		'http://metacpan.org/release/${dist}',
-	#	});
-
 }
 
 =head1 AUTHOR
@@ -138,6 +103,7 @@ Matt Finkel <fffinkel@cpan.org>
 =head1 SEE ALSO
 
 L<Dist::Zilla::Role::PluginBundle::Easy> L<Dist::Zilla::PluginBundle::RJBS>
+L<Dist::Zilla::PluginBundle::INGY>
 
 =cut
 

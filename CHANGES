@@ -1,20 +1,24 @@
 ==================================================
-Changes from 2012-10-21 00:00:00 +0000 to present.
+Changes from 2012-11-07 00:00:00 +0000 to present.
 ==================================================
 
 ------------------------------------------
-version 0.005 at 2013-10-21 02:31:55 +0000
+version 0.001 at 2013-11-07 04:17:10 +0000
 ------------------------------------------
 
-  Change: df241475a5dba7fa0752ffd7ff62ba73e552ee1e
+  Change: 5daa7a7c5d5944cc5a77a9fa814041c2570600ee
   Author: Matt Finkel <finkel.matt@gmail.com>
-  Date : 2013-10-21 02:31:30 +0000
+  Date : 2013-11-06 22:05:20 +0000
 
-    Don't fake release 
+    Update POD, clean up comments, no functional changes 
 
-------------------------------------------
-version 0.004 at 2013-10-20 00:59:13 +0000
-------------------------------------------
+  Change: 2159d5f8231b9750d4e2bfa075b2ac34705b651d
+  Author: Matt Finkel <finkel.matt@gmail.com>
+  Date : 2013-11-06 22:05:02 +0000
+
+    Remove PodCoverageTests
+
+    Temporary? 
 
   Change: c932e6cc0f665d951874715a9b23b18acaa8cc0d
   Author: Matt Finkel <finkel.matt@gmail.com>
@@ -22,29 +26,17 @@ version 0.004 at 2013-10-20 00:59:13 +0000
 
     v0.004 
 
-------------------------------------------
-version 0.003 at 2013-10-20 00:48:21 +0000
-------------------------------------------
-
   Change: 81576c923cdd346abc94095bdad83fdb3656458f
   Author: Matt Finkel <finkel.matt@gmail.com>
   Date : 2013-10-20 00:48:21 +0000
 
     Remove fake release plugin 
 
-------------------------------------------
-version 0.002 at 2013-10-20 00:45:40 +0000
-------------------------------------------
-
   Change: 1408e66d1b36e699aef1900a5168f18d10ef79af
   Author: Matt Finkel <finkel.matt@gmail.com>
   Date : 2013-10-20 00:45:40 +0000
 
     Update main module pod 
-
-------------------------------------------
-version 0.001 at 2013-10-20 00:39:46 +0000
-------------------------------------------
 
   Change: d67fb1d5f340d440fbf2cce11fd003989e10fc6e
   Author: Matt Finkel <finkel.matt@gmail.com>

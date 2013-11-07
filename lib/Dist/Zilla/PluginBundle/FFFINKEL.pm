@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::PluginBundle::FFFINKEL::AUTHORITY = 'cpan:FFFINKEL';
 }
 {
-  $Dist::Zilla::PluginBundle::FFFINKEL::VERSION = '0.005';
+  $Dist::Zilla::PluginBundle::FFFINKEL::VERSION = '0.001';
 }
 
 # ABSTRACT: My Dist::Zilla plugin bundle
@@ -41,9 +41,9 @@ sub configure {
 		qw/
 		  EOLTests
 		  PodSyntaxTests
-		  PodCoverageTests
 		  Git::Check
 		  /
+		  #PodCoverageTests
 	);
 
 	$self->add_bundle(
@@ -56,41 +56,6 @@ sub configure {
 
 	$self->add_plugins('Twitter');
 
-	#=pod
-	#
-	#TODO
-	#
-	#  [MetaJSON]
-	#  [MetaConfig]
-	#  [MetaResources]
-	#  repository.type   = git
-	#  repository.url    =
-	#  http://git.mfinkel.net/cpan/${lowercase_dist}
-	#  repository.web    =
-	#  http://github.com/rafl/${lowercase_dist}
-	#  bugtracker.web    =
-	#  http://rt.cpan.org/Public/Dist/Display.html?Name=${dist}
-	#  bugtracker.mailto = bug-${dist}@rt.cpan.org
-	#  homepage          =
-	#  http://metacpan.org/release/${dist}
-	#
-	#=cut
-	#
-	#	$self->add_plugins('MetaJSON');
-	#	$self->add_plugins('MetaConfig');
-	#	$self->add_plugins('MetaResources', {
-	#		'repository.type' => 'git',
-	#		'repository.url' =>
-	#		'git@github.com:fffinkel/${lowercase_dist}',
-	#		'repository.web' =>
-	#		'http://github.com/fffinkel/${lowercase_dist}',
-	#		'bugtracker.web' =>
-	#		'http://rt.cpan.org/Public/Dist/Display.html?Name=${dist}',
-	#		'bugtracker.mailto' => 'bug-${dist}@rt.cpan.org',
-	#		'homepage' =>
-	#		'http://metacpan.org/release/${dist}',
-	#	});
-
 }
 
 
@@ -102,13 +67,15 @@ __END__
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
 Dist::Zilla::PluginBundle::FFFINKEL - My Dist::Zilla plugin bundle
 
 =head1 VERSION
 
-version 0.005
+version 0.001
 
 =head1 SYNOPSIS
 
@@ -160,6 +127,7 @@ Matt Finkel <fffinkel@cpan.org>
 =head1 SEE ALSO
 
 L<Dist::Zilla::Role::PluginBundle::Easy> L<Dist::Zilla::PluginBundle::RJBS>
+L<Dist::Zilla::PluginBundle::INGY>
 
 =head1 AUTHOR
 
